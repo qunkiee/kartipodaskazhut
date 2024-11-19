@@ -1,0 +1,59 @@
+@import url(./fonts/fonts.css);
+@import url(./main/main.css);
+@import url(./header/header.css);
+@import url(./footer/footer.css);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.page {
+  min-inline-size: 360px;
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--main-font);
+  overflow-x: hidden;
+}
+
+p,
+h1,
+h2,
+h3,
+blockquote,
+ul,
+ol,
+li,
+figure {
+  margin: 0;
+}
+
+:root {
+  --bg-color: white;
+  --text-color: rgba(49, 42, 78, 1);
+  --accent-color: rgba(255, 171, 107, 1);
+  --main-font: Raleway;
+  --accent-font: "STIX Two Text";
+  --border-color: black;
+}
+
+.theme_dark {
+  --bg-color: black;
+  --text-color: rgba(179, 179, 179, 1);
+  --border-color: white;
+  --accent-color: transparent;
+}
+
+.heading {
+  text-align: center;
+  font-family: var(--accent-font);
+  margin-bottom: 59px;
+  font-weight: bold;
+}
+
+button:focus,
+a:focus {
+  outline: none;
+}
